@@ -36,6 +36,91 @@
 "Value":65524,
 "Source":"Project",
 "Type":"ExternalAddr",
+"LabelAnno":"None"},
+
+"OSWORD":{
+"DataDescriptor":{
+"Length":1,
+"Format":"NumericLE",
+"SubFormat":"Hex",
+"SymbolRef":null},
+
+"Comment":"",
+"HasWidth":false,
+"Direction":"ReadWrite",
+"MultiMask":null,
+"Label":"OSWORD",
+"Value":65521,
+"Source":"Project",
+"Type":"ExternalAddr",
+"LabelAnno":"None"},
+
+"OSWORD_01_TIME":{
+"DataDescriptor":{
+"Length":1,
+"Format":"NumericLE",
+"SubFormat":"Decimal",
+"SymbolRef":null},
+
+"Comment":"",
+"HasWidth":false,
+"Direction":"ReadWrite",
+"MultiMask":null,
+"Label":"OSWORD_01_TIME",
+"Value":1,
+"Source":"Project",
+"Type":"Constant",
+"LabelAnno":"None"},
+
+"ZP_HIMEM":{
+"DataDescriptor":{
+"Length":2,
+"Format":"NumericLE",
+"SubFormat":"Hex",
+"SymbolRef":null},
+
+"Comment":"",
+"HasWidth":true,
+"Direction":"ReadWrite",
+"MultiMask":null,
+"Label":"ZP_HIMEM",
+"Value":6,
+"Source":"Project",
+"Type":"ExternalAddr",
+"LabelAnno":"None"},
+
+"ZP_INT_WA":{
+"DataDescriptor":{
+"Length":4,
+"Format":"NumericLE",
+"SubFormat":"Hex",
+"SymbolRef":null},
+
+"Comment":"Integer Workspace A",
+"HasWidth":true,
+"Direction":"ReadWrite",
+"MultiMask":null,
+"Label":"ZP_INT_WA",
+"Value":42,
+"Source":"Project",
+"Type":"ExternalAddr",
+"LabelAnno":"None"},
+
+"ZP_LOMEM":{
+"DataDescriptor":{
+"Length":2,
+"Format":"NumericLE",
+"SubFormat":"Hex",
+"SymbolRef":null},
+
+"Comment":"",
+"HasWidth":true,
+"Direction":"ReadWrite",
+"MultiMask":null,
+"Label":"ZP_LOMEM",
+"Value":0,
+"Source":"Project",
+"Type":"ExternalAddr",
 "LabelAnno":"None"}}},
 
 "AddressMap":[{
@@ -606,88 +691,88 @@
 
 "UserLabels":{
 "16248":{
-"Label":"TBF78",
+"Label":"fnOPENIN",
 "Value":49016,
 "Source":"User",
 "Type":"GlobalAddr",
-"LabelAnno":"Generated"},
+"LabelAnno":"None"},
 
 "16199":{
-"Label":"TBF47",
+"Label":"varGetPTR",
 "Value":48967,
 "Source":"User",
 "Type":"GlobalAddr",
-"LabelAnno":"Generated"},
+"LabelAnno":"None"},
 
 "11968":{
-"Label":"TAEC0",
+"Label":"varGetPAGE",
 "Value":44736,
 "Source":"User",
 "Type":"GlobalAddr",
-"LabelAnno":"Generated"},
+"LabelAnno":"None"},
 
 "11956":{
-"Label":"TAEB4",
+"Label":"varGetTIME",
 "Value":44724,
 "Source":"User",
 "Type":"GlobalAddr",
-"LabelAnno":"Generated"},
+"LabelAnno":"None"},
 
 "12028":{
-"Label":"TAEFC",
+"Label":"varGetLOMEM",
 "Value":44796,
 "Source":"User",
 "Type":"GlobalAddr",
-"LabelAnno":"Generated"},
+"LabelAnno":"None"},
 
 "12035":{
-"Label":"TAF03",
+"Label":"varGetHIMEM",
 "Value":44803,
 "Source":"User",
 "Type":"GlobalAddr",
-"LabelAnno":"Generated"},
+"LabelAnno":"None"},
 
 "11626":{
-"Label":"TAD6A",
+"Label":"fnABS",
 "Value":44394,
 "Source":"User",
 "Type":"GlobalAddr",
-"LabelAnno":"Generated"},
+"LabelAnno":"None"},
 
 "10452":{
-"Label":"TA8D4",
+"Label":"fnACS",
 "Value":43220,
 "Source":"User",
 "Type":"GlobalAddr",
-"LabelAnno":"Generated"},
+"LabelAnno":"None"},
 
 "11059":{
-"Label":"TAB33",
+"Label":"fnADVAL",
 "Value":43827,
 "Source":"User",
 "Type":"GlobalAddr",
-"LabelAnno":"Generated"},
+"LabelAnno":"None"},
 
 "11422":{
-"Label":"TAC9E",
+"Label":"fnASC",
 "Value":44190,
 "Source":"User",
 "Type":"GlobalAddr",
-"LabelAnno":"Generated"},
+"LabelAnno":"None"},
 
 "10458":{
-"Label":"TA8DA",
+"Label":"fnASN",
 "Value":43226,
 "Source":"User",
 "Type":"GlobalAddr",
-"LabelAnno":"Generated"},
+"LabelAnno":"None"},
 
 "10503":{
-"Label":"TA907",
+"Label":"fnATN",
 "Value":43271,
 "Source":"User",
 "Type":"GlobalAddr",
-"LabelAnno":"Generated"},
+"LabelAnno":"None"},
 
 "16239":{
 "Label":"TBF6F",
@@ -1387,7 +1472,14 @@
 "Value":48834,
 "Source":"User",
 "Type":"GlobalAddr",
-"LabelAnno":"Generated"}},
+"LabelAnno":"Generated"},
+
+"12010":{
+"Label":"readYA16asInt",
+"Value":44778,
+"Source":"User",
+"Type":"GlobalAddr",
+"LabelAnno":"None"}},
 
 "OperandFormats":{
 "37":{
@@ -1733,7 +1825,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TBF78",
+"Label":"fnOPENIN",
 "Part":"Low"}},
 
 "878":{
@@ -1741,7 +1833,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TBF47",
+"Label":"varGetPTR",
 "Part":"Low"}},
 
 "879":{
@@ -1749,7 +1841,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TAEC0",
+"Label":"varGetPAGE",
 "Part":"Low"}},
 
 "880":{
@@ -1757,7 +1849,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TAEB4",
+"Label":"varGetTIME",
 "Part":"Low"}},
 
 "881":{
@@ -1765,7 +1857,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TAEFC",
+"Label":"varGetLOMEM",
 "Part":"Low"}},
 
 "882":{
@@ -1773,7 +1865,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TAF03",
+"Label":"varGetHIMEM",
 "Part":"Low"}},
 
 "883":{
@@ -1781,7 +1873,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TAD6A",
+"Label":"fnABS",
 "Part":"Low"}},
 
 "884":{
@@ -1789,7 +1881,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TA8D4",
+"Label":"fnACS",
 "Part":"Low"}},
 
 "885":{
@@ -1797,7 +1889,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TAB33",
+"Label":"fnADVAL",
 "Part":"Low"}},
 
 "886":{
@@ -1805,7 +1897,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TAC9E",
+"Label":"fnASC",
 "Part":"Low"}},
 
 "887":{
@@ -1813,7 +1905,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TA8DA",
+"Label":"fnASN",
 "Part":"Low"}},
 
 "888":{
@@ -1821,7 +1913,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TA907",
+"Label":"fnATN",
 "Part":"Low"}},
 
 "889":{
@@ -2645,7 +2737,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TBF78",
+"Label":"fnOPENIN",
 "Part":"High"}},
 
 "992":{
@@ -2653,7 +2745,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TBF47",
+"Label":"varGetPTR",
 "Part":"High"}},
 
 "993":{
@@ -2661,7 +2753,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TAEC0",
+"Label":"varGetPAGE",
 "Part":"High"}},
 
 "994":{
@@ -2669,7 +2761,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TAEB4",
+"Label":"varGetTIME",
 "Part":"High"}},
 
 "995":{
@@ -2677,7 +2769,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TAEFC",
+"Label":"varGetLOMEM",
 "Part":"High"}},
 
 "996":{
@@ -2685,7 +2777,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TAF03",
+"Label":"varGetHIMEM",
 "Part":"High"}},
 
 "997":{
@@ -2693,7 +2785,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TAD6A",
+"Label":"fnABS",
 "Part":"High"}},
 
 "998":{
@@ -2701,7 +2793,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TA8D4",
+"Label":"fnACS",
 "Part":"High"}},
 
 "999":{
@@ -2709,7 +2801,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TAB33",
+"Label":"fnADVAL",
 "Part":"High"}},
 
 "1000":{
@@ -2717,7 +2809,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TAC9E",
+"Label":"fnASC",
 "Part":"High"}},
 
 "1001":{
@@ -2725,7 +2817,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TA8DA",
+"Label":"fnASN",
 "Part":"High"}},
 
 "1002":{
@@ -2733,7 +2825,7 @@
 "Format":"NumericLE",
 "SubFormat":"Symbol",
 "SymbolRef":{
-"Label":"TA907",
+"Label":"fnATN",
 "Part":"High"}},
 
 "1003":{
@@ -3550,7 +3642,47 @@
 "SubFormat":"Symbol",
 "SymbolRef":{
 "Label":"TBEC2",
-"Part":"High"}}},
+"Part":"High"}},
+
+"11956":{
+"Length":2,
+"Format":"NumericLE",
+"SubFormat":"Symbol",
+"SymbolRef":{
+"Label":"ZP_INT_WA",
+"Part":"Low"}},
+
+"11960":{
+"Length":2,
+"Format":"NumericLE",
+"SubFormat":"Symbol",
+"SymbolRef":{
+"Label":"OSWORD_01_TIME",
+"Part":"Low"}},
+
+"11962":{
+"Length":3,
+"Format":"NumericLE",
+"SubFormat":"Symbol",
+"SymbolRef":{
+"Label":"OSWORD",
+"Part":"Low"}},
+
+"12028":{
+"Length":2,
+"Format":"NumericLE",
+"SubFormat":"Symbol",
+"SymbolRef":{
+"Label":"ZP_LOMEM",
+"Part":"Low"}},
+
+"12035":{
+"Length":2,
+"Format":"NumericLE",
+"SubFormat":"Symbol",
+"SymbolRef":{
+"Label":"ZP_HIMEM",
+"Part":"Low"}}},
 
 "LvTables":{
 },
